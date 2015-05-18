@@ -1,0 +1,3 @@
+h1. asbootrc - The Asboot Init System
+
+As long as it can start the system, that is fine.
