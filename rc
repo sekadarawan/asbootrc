@@ -23,4 +23,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
+
+. /lib/lsb/init-functions
+
+# parse_runlevel()
+#
+trap ":" INT QUIT TSTP
+
 # vim: ft=sh:ts=2:sw=2:sts=2:syn=sh:et
