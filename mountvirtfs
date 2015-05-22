@@ -1,0 +1,27 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          mountvirtfs
+# Required-Start:
+# Should-Start:
+# Required-Stop:
+# Should-Stop:
+# Default-Start:     S
+# Default-Stop:
+# Short-Description: Mounts /sys /proc virtual filesystems.
+#                    Mounts /run (tmpfs) and /dev (devtmpfs).
+# Description:       Mounts /sys /proc virtual filesystems.
+#                    Mounts /run (tmpfs) and /dev (devtmpfs).
+# X-Asboot-Provided-By: Asboot
+### END INIT INFO
+
+. /lib/lsb/init-funtcions
+
+case "${1}" in
+  start)
+    ;;
+  *)
+    printf "Usage: ${0} {start}\n"
+    exit 1
+    ;;
+esac
+# vim: ft=sh:ts=2:sw=2:sts=2:syn=sh:et
